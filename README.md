@@ -1,4 +1,5 @@
 # Tune Hub - Music Management System
+<img src="https://user-images.githubusercontent.com/61057666/169029838-74df663d-2e62-4d77-bdff-b43f7d63f00f.png" alt="tejaskoshti" />
 
 Tune Hub is a music management system that allows users to efficiently organize and manage their music collection. The application features two main modules - one for customers to enjoy premium music access and subscription upgrades and another for administrators to manage songs and playlists.
 
