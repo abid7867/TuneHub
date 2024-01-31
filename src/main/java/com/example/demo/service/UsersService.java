@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.List;
+
 import com.example.demo.entities.Users;
 
 public interface UsersService {
@@ -10,4 +12,5 @@ public interface UsersService {
 	public String getRole(String email);
 	public Users getUser(String email);
 	public void updateUser(Users user);
+	public List<Users> findAll();
 }

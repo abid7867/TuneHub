@@ -2,18 +2,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<style type="text/css">
-	iframe{
-		height:100px;
-		width:700px;
-		
-	}
-</style>
+<title>Display Playlist</title>
+<link rel="stylesheet" th:href="@{/css/displayPlaylists.css}">
 </head>
-
 <body>
-	<table border>
+	<!-- <h1>View All PlayList</h1> -->
+	<div class="container" id="container">
+	<table>
 		<thead>
 		  <tr>
 			<th>Name</th>
@@ -33,10 +28,11 @@
     						</audio>
 						</li>
 					</ul>
-				<td>
-				<!-- <td th:text="${song.link}"></td> -->  <!-- for other link used  -->
+				</td>
+			<!-- 	<td th:text="${song.link}"></td>   -->
 			</tr>
 		</tbody>
 	</table>
+</div>
 </body>
 </html>

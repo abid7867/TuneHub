@@ -1,0 +1,52 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            background-color: #c1efde;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .features {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color:  #009d63;
+            color: black;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: black;
+            color:  #009d63;
+        }

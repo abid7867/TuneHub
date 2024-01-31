@@ -3,9 +3,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/login.css}">
 </head>
 <body>
-		<h1>Login Page</h1>
+		<!-- <h1>Login Page</h1>
 	 	<form action="/validate" method="post">
 		
 		<label>Email : </label>
@@ -15,9 +16,26 @@
 		<input type="password" name="password"><br><br>
 	
 		
-		<input type="submit" name="register" value="Login">
+		<input type="submit" name="register" value="Login"> -->	
 		
-	
-	</form> 
-</body>
+		 <section class="container">
+      <header>Login Form</header>
+      <form action="/validate" method="post" class="form">
+        <div class="input-box">
+          
+          <input type="email" name="email" placeholder="Enter email address" required />
+        </div>
+        <div class="input-box">
+       
+          <input type="password" name="password" placeholder="Enter your password" required />
+        </div>
+      
+    
+        <button name="register">Submit</button>
+        <br><br>
+        Don't have an account? <a href="/registration">REGISTER</a>
+      </form>
+    </section>
+  </body>
 </html>
+	<!-- </form>  -->

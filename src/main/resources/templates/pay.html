@@ -4,20 +4,40 @@
 <meta charset="ISO-8859-1">
 	
 	<title>View Course</title>
+	<link rel="stylesheet" th:href="@{/css/pay.css}">
 	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	
 
 </head>
 <body>
-<div>
 
-		<h1>Why premium ? </h1>
-		<p>All Songs text...................</p>
+
+ <div>
+ 	<h1>Why premium ? </h1>
+		<!-- <p>All Songs text...................</p>
 		
     	<form id="payment-form">
 	        <button type="submit" class="buy-button" >BUY</button>
+	    </form> -->
+	    
+   <div class="container">
+        <h1>TUNEHUB Premium: Unlock Exclusive Content! 🎉</h1>
+        <p>Upgrade to TUNEHUB Premium and gain access to exclusive tracks, early releases, and behind-the-scenes content! 🌟</p>
+
+        <ul class="features">
+            <li>🔒 Ad-Free Listening</li>
+            <li>📶 High-Quality Audio</li>
+            <li>📲 Offline Downloads</li>
+            <li>🎁 Exclusive Content Access</li>
+        </ul>
+
+        <p>Upgrade now and enjoy a VIP music experience like never before! 🚀🎧</p>
+        
+        <form id="payment-form">
+        	<button type="submit" class="buy-button" >BUY NOW</button>
 	    </form>
-   
+    </div>
 </div>
 
 <script>
@@ -81,6 +101,9 @@ function verifyPayment(orderId, paymentId, signature) {
             console.error("Error:", error);
         });
 }
-</script>
+</script> 
+
+
+
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/displayUsers.css}">
+</head>
+<body>
+<div class="container">
+<h1>VIEW ALL USERS</h1>
+ <table border>
+		<thead>
+		  <tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Gender</th>
+			<th>Premium</th>
+		  </tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="user:${userList}">
+			<div th:if="${user.role}==customer">
+				<td th:text="${user.username}"></td>
+				<td th:text="${user.email}"></td>
+				<td th:text="${user.gender}"></td>
+				<td th:text="${user.isPremium}"></td>  
+				</div>
+				
+			</tr>
+		</tbody>
+	</table>
+	</div> 
+  </body>
+</html>
+	<!-- </form>  -->

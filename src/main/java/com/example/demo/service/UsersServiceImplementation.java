@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -61,6 +63,12 @@ public class UsersServiceImplementation
 	public void updateUser(Users user) {
 		repo.save(user);
 		
+	}
+
+	@Override
+	public List<Users> findAll() {
+		
+		return repo.findAll();
 	}
 
 }

@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	accent-color: #009d63;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color:#c1efde;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 3rem;
+}
+
+.wrapper {
+	max-width: 75rem;
+	width: 100%;
+	padding: min(3rem, 5vw);
+}
+
+form {
+	padding: 1.5rem;
+	background-color: rgba(245, 245, 245);
+	border-radius: 0.5rem;
+}
+
+legend {
+	font-weight: 700;
+}
+
+fieldset > * + * {
+	margin-top: 0.5rem;
+}
+
+form > * + * {
+	margin-top: 1.5rem;
+}
+
+.form__group {
+	display: flex;
+	align-items: center;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: 0.65rem;
+}
+
+input[type="range"],
+progress {
+	margin-left: auto;
+	flex: 0 1 50%;
+}
+
+form:nth-child(2n) {
+	color-scheme: dark;
+	background-color:  #009d63;
+	color: white;
+}
+
+.button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #009d63;
+}
+.button:hover {
+  background:#c1efde;
+  color:black;
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}

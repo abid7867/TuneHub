@@ -3,9 +3,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/newSong.css}">
 </head>
 <body>
-	<form action="addSong" method="post">
+<!-- 	<form action="addSong" method="post">
 		<label>Song name : </label>
 		<input type="text" name="name"/><br><br>
 		
@@ -19,6 +20,33 @@
 		<input type="text" name="link"><br><br>
 		
 		<input type="submit" value="Add Song"/>
-	</form>
+	</form> -->
+	
+	 <section class="container">
+      <header>Add New Song</header>
+      <form action="addSong" method="post" class="form">
+        <div class="input-box">
+           <input type="text" name="name" placeholder="Enter Song Name" required />
+        </div>
+
+        <div class="input-box">
+          
+          <input type="text" name="artist" placeholder="Song Artist" required />
+        </div>
+        
+        <div class="input-box">
+           <input type="text" name="genere" placeholder="Enter Song Genre" required />
+        </div>
+
+        <div class="input-box">
+          
+          <input type="text" name="link" placeholder="Song Link" required />
+        </div>
+		
+		<!-- <input type="submit" value="Add Song"/> -->
+       
+        <button name="submit" value="Add Song">Add Song</button>
+      </form>
+    </section>
 </body>
 </html>

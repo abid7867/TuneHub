@@ -2,40 +2,45 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<style type="text/css">
-	iframe{
+<title>display Songs</title>
+<!-- <style type="text/css"> -->
+<link rel="stylesheet" th:href="@{/css/displaySongs.css}">
+
+<!--  	iframe{
 		height:100px;
 		width:700px;
 		
-	}
-</style>
+	} --> 
+<!-- </style> -->
 </head>
-
 <body>
-	<table border>
+	<div  class="premium" id="container">
+	<h1>VIEW ALL SONGS</h1>
+	<table>
 		<thead>
-		  <tr>
-			<th>Name</th>
-			<th>Artist</th>
-			<th>Genre</th>
-			<th>Play</th>
-		  </tr>
+			<tr>
+				<th>Name</th>
+				<th>Artist</th>
+				<th>Genre</th>
+				<th>Play</th>
+			</tr>
 		</thead>
 		
 		<tbody>
 			<tr th:each="song:${songs}">
-				<td th:text="${song.name}"></td>
-				<td th:text="${song.artist}"></td>
-				<td th:text="${song.genere}"></td>
-				<!-- <td th:text="${song.link}"></td> -->  <!-- for other link used  -->
-				<td>
-				<audio controls>
-       				  <source th:src="${song.link}" type="audio/mpeg">
-    			</audio>
+				<td th:text="${song.name}">			</td>
+				<td th:text="${song.artist}">		</td>
+				<td th:text="${song.genere}">		</td>
+				<td >
+					<audio controls>
+        				<source th:src="${song.link}" type="audio/mpeg">
+    				</audio>
 				</td>
+				
 			</tr>
 		</tbody>
 	</table>
+</div>	
+
 </body>
 </html>

@@ -3,9 +3,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/createPlaylist.css}">
 </head>
 <body>
-	<form action="addPlaylist"  method="Post">
+	<!-- <form action="addPlaylist"  method="Post">
 		<label>Playlist name : </label>
 		<input type="text" name="name" />
 		<br/>
@@ -16,6 +17,25 @@
 		</div>
 		
 		<input type="submit" value="ADD PALYLIST">
-	</form>
+	</form> -->
+	
+<div class="wrapper">
+	<h1>CREATE PLAYLIST</h1>
+	<div class="grid">
+		<form action="addPlaylist" method="Post">
+			<label>Playlist name : </label>
+				<input type="text" name="name" />
+				<br/>
+			<fieldset>
+				<legend>All Songs</legend>
+				<div class="form__group" th:each="song:${songs}">
+					<input type="checkbox" id="berries_1" th:name="songs" th:value="${song.id}">
+					<label th:text="${song.name}"></label>
+				</div>
+				<input type="submit" class="button" value="ADD PALYLIST">
+		</form>
+		
+	</div>
+</div>
 </body>
 </html>
