@@ -1,21 +1,19 @@
-# Tune Hub - Music Management System
-<img src="https://user-images.githubusercontent.com/61057666/169029838-74df663d-2e62-4d77-bdff-b43f7d63f00f.png" alt="abidhussain" />
+# Tune Hub - Music Player Apps
+<img src="https://github.com/abid7867/TuneHubSongs/blob/main/image/Screenshot%20(154).png" alt="abidhussain" />
 
-Tune Hub is a music management system that allows users to efficiently organize and manage their music collection. The application features two main modules - one for customers to enjoy premium music access and subscription upgrades and another for administrators to manage songs and playlists.
+Tune Hub is a music management system that allows users to organize and manage their music collection efficiently. The application features two main modules - one for customers to enjoy premium music access and subscription upgrades and another for administrators to manage songs and playlists.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
 ## Features
-
+<img src="https://github.com/abid7867/TuneHubSongs/blob/main/image.jpeg" alt="abid" />
 ### Customer Module
 
 - Premium listening experience.
@@ -41,11 +39,7 @@ To get started with Tune Hub, follow these steps:
 2. Navigate to the project directory: `cd tune-hub`
 3. Install dependencies: `npm install` (for frontend) and `mvn install` (for backend)
 4. Configure the database: Update `application.properties` with your MySQL database credentials.
-5. Run the application: `mvn spring-boot:run` for the backend and `npm start` for the frontend.
-
-## Usage
-
-Provide usage examples, screenshots, or gifs to showcase the application in action.
+5. Run the application: `mvn spring-boot: run` for the backend and `npm start` for the frontend.
 
 
 ## License
